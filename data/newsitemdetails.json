@@ -1,0 +1,18 @@
+[
+
+  {"id":1,
+  "caption":"Microsoft joins the Linux Foundation, 15 years after Ballmer called it 'cancer'",
+  "description":"Former Microsoft CEO might have labeled Linux a cancer 15 years ago, but things couldn't be any different this week. Microsoft, the software giant that has built its empire on closed-source proprietary software, is joining the Linux Foundation. 10 years ago that would have seemed unimaginable, but Microsoft has been steadily embracing open source recently, leading it to become the top organizat",
+  "photo": "./images/thumbnail1.png"
+
+
+  },
+  {"id":2,
+    "caption":"OnePlus' Bullets earphones are criminally underpriced'",
+    "description":"FOnePlus is our reigning champion when it comes to the best value smartphones , so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+    "photo": "./images/thumbnail2.png"
+
+  }
+
+
+]

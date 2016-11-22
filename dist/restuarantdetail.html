@@ -1,0 +1,228 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Restuarant Reviewer</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="css/mdlstyles.css">
+    <link rel="stylesheet" href="css/customstyles.css">
+    <link rel="stylesheet" href="css/accessiblestarrating.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base" data-title="restuarantListDetail">
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+
+      <a href="index.html" aria-label="Back to Restuarant list" >  <h1>Restuarant Reviewer</h1></a>
+
+        <div class="mdl-layout-spacer"></div>
+     </div>
+    </header>
+    <!-- Add spacer, to align navigation to the right -->
+  <!-- <a href="index.html" > <i class="material-icons">keyboard_backspace</i> Back to All Restaurants</a> -->
+
+    <main class="mdl-layout__content">
+      <div class="page-content">
+
+        <!--New content will be displayed in here-->
+        <div class="content-placeholder"></div>
+
+
+      </div>
+    </main>
+  </div>
+  <dialog id="dialog" class="mdl-dialog">
+    <h3>Rate and Review</h3>
+     <h5> <img  src="../images/userface.png" width="30" height="30" alt="" ></img> Shanthi Acharya</h5>
+    <p id= date> </p>
+    <span class="Rating Rating--large">
+        <span class="Rating-rater" aria-label="Rating">
+          <input class="Rating-rater-input" aria-label="Rate 1 out of 5" role="option" type="radio" id="1outof5l" name="ratingl" value="1"/>
+          <label class="Rating-rater-label" for="1outof5l" role="presentation"></label>
+          <input class="Rating-rater-input" aria-label="Rate 2 out of 5" role="option" type="radio" id="2outof5l" name="ratingl" value="2"/>
+          <label class="Rating-rater-label" for="2outof5l" role="presentation"></label>
+          <input class="Rating-rater-input" aria-label="Rate 3 out of 5" role="option" type="radio" id="3outof5l" name="ratingl" value="3"/>
+          <label class="Rating-rater-label" for="3outof5l" role="presentation"></label>
+          <input class="Rating-rater-input" aria-label="Rate 4 out of 5" role="option" type="radio" id="4outof5l" name="ratingl" value="4"/>
+          <label class="Rating-rater-label" for="4outof5l" role="presentation"></label>
+          <input class="Rating-rater-input" aria-label="Rate 5 out of 5" role="option" type="radio" id="5outof5l" name="ratingl" value="5"/>
+          <label class="Rating-rater-label" for="5outof5l" role="presentation"></label>
+          <span class="Rating-rater-indicator" role="presentation">
+          </span>
+        </span>
+    </span>
+
+    <div class="mdl-dialog__content">
+
+      <div>
+        <label for="userreviews">Describe your experience</label>
+        <textarea type="text" width="1050" height="500" rows="5" id="userreviews" placeholder="Describe your experience"></textarea>
+      </div>
+    </div>
+    <div class="mdl-dialog__actions">
+
+      <button type="button" class="mdl-button mdl-js-button mdl-button--accent" id ="postreviews">Post</button>
+      <button type="button" class="mdl-button" id ="cancelreviews">Cancel</button>
+    </div>
+  </dialog>
+
+  <dialog id="confirmdialog" class="mdl-dialog">
+
+    <div class="mdl-dialog__content">
+
+      <div>
+         <h3><i class="material-icons">done</i>  Your review has been posted. </h3>
+      </div>
+    </div>
+    <div class="mdl-dialog__actions">
+
+      <button type="button" class="mdl-button mdl-js-button mdl-button--accent" id ="doneconfirm">Done</button>
+
+    </div>
+  </dialog>
+
+
+  <!--This is our template. -->
+<!--Data will be inserted in its according place, replacing the brackets.-->
+<script id="restuarantdetail-template" type="text/x-handlebars-template">
+  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+
+        <!-- Starts here -->
+        {{#each .}}
+        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" tabindex="0"  >
+             <div class="photoContainer">
+              <!-- href={{url}} data-id ={{id}} -->
+              <a data-id ={{id}} data-control="resListItem" onclick="redirecttoDetailsPage({{{json this}}})">
+                <img  src={{photo}} width="100" height="100" alt ={{name}} ></img> </a>
+             </div>
+            <div id= "resinfo" class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+               <h5>  {{name}}</h5>
+               <span class="Rating Rating--large Rating--showValue" data-rating={{rating1to5}} aria-label= "{{{addratingLabel rating1to5}}}">
+                <span class="Rating-rater">
+                  <span class="Rating-rater-indicator">
+                  </span>
+                </span>
+               </span>
+
+                <div>
+                 <span> <label   aria-label="{{{addlabel  this.price}}}"> {{price}} </label></span>
+                <span>  <label>  - {{cuisine}} </label>
+                
+                <p><i class="material-icons">place</i> {{longaddress}} </p>
+                 <p> <i class="material-icons">local_phone</i>{{phone}}</p>
+                  <p><i class="material-icons">schedule</i>Open{{hours}}</p>
+               {{reviews.reviewername}}
+            </div>
+          </div>
+        {{/each}}
+        <!-- Ends here -->
+
+    </div>
+  </section>
+</script>
+
+
+
+
+<script id="restuarantreviews-template" type="text/x-handlebars-template">
+  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" >
+
+
+    <div class="mdl-card card-hist mdl-cell mdl-cell--12-col">
+
+      <div class="mdl-card__actions ">
+        <button type="button" class="mdl-button mdl-js-button mdl-button--accent top-right " id ="writereviews" onclick="showReviewModal();"> Write a Review</button>
+      </div>
+
+      <!-- Starts here -->
+      <!-- id= "resinfo"  -->
+      {{#each .}}
+      <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" tabindex="0">
+        <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+        <img  src="../images/userface.png" width="30" height="30" alt="" ></img><h5>{{reviewername}} </h5>
+         {{date }}<br/><br/>
+         <span class="Rating Rating--large Rating--showValue" data-rating={{rating1to5}} aria-label= "{{{addratingLabel rating1to5}}}">
+          <span class="Rating-rater">
+            <span class="Rating-rater-indicator">
+            </span>
+          </span>
+         </span>
+         <br/>
+        {{comments }}<br/><br/>
+      </div>
+    </div>
+      {{/each}}
+  </div>
+
+</section>
+</script>
+
+
+
+
+
+
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
