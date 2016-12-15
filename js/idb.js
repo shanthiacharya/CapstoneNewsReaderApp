@@ -8,7 +8,7 @@ var indexedDBHelper = function(){
 
         var promise = new Promise(function(resolve, reject){
             //Opening the DB
-            var request = indexedDB.open("gtfsData", version);
+            var request = indexedDB.open("NewsReaderData", version);
 
             //Handling onupgradeneeded
             //Will be called if the database is new or the version is modified
@@ -18,18 +18,19 @@ var indexedDBHelper = function(){
                 e.target.transaction.onerror = indexedDB.onerror;
 
                 //Deleting DB if already exists
-                if(db.objectStoreNames.contains("gtfsstation")) {
-                    db.deleteObjectStore("gtfsstation");
+                if(db.objectStoreNames.contains("NewsItems")) {
+                    db.deleteObjectStore("NewsItems");
                 }
 
                 //Creating a new DB store with a paecified key property
-                var store = db.createObjectStore("gtfsstation",
+                var store = db.createObjectStore("NewsItems",
                     {keyPath: "id"});
             };
 
             //If opening DB succeeds
             request.onsuccess = function(e) {
                 db = e.target.result;
+                console.log("success" + db);
                 resolve();
             };
 
@@ -41,10 +42,10 @@ var indexedDBHelper = function(){
         return promise;
     };
 
-    var addgtfsstations = function(gtfsdep,gtfsarr) {
+    var addnewsitem = function(caption,description) {
         //Creating a transaction object to perform read-write operations
-        var trans = db.transaction(["gtfsstation"], "readwrite");
-        var store = trans.objectStore("gtfsstation");
+        var trans = db.transaction(["NewsItems"], "readwrite");
+        var store = trans.objectStore("NewsItems");
         lastIndex++;
 
         //Wrapping logic inside a promise
@@ -55,8 +56,8 @@ var indexedDBHelper = function(){
             //
             var request = store.put({
                  "id": lastIndex,
-                "departure": gtfsdep,
-                "arrival": gtfsarr,
+                "caption": caption,
+                "description": description,
             });
 
             //success callback
@@ -75,14 +76,14 @@ var indexedDBHelper = function(){
     };
 
 // Match for selected station
-var retreivegtfsstations = function(gtfsdep,gtfsarr) {
-    var gtfsstationArr = [];
+var retreivenewsitem = function(id,caption) {
+    var newsitemArr = [];
 
     //Creating a transaction object to perform Read/Write operations
-    var trans = db.transaction(["gtfsstation"], "readwrite");
+    var trans = db.transaction(["NewsItems"], "readwrite");
 
     //Getting a reference of the todo store
-    var store = trans.objectStore("gtfsstation");
+    var store = trans.objectStore("NewsItems");
 
     //Wrapping all the logic inside a promise
     var promise = new Promise(function(resolve, reject){
@@ -101,7 +102,7 @@ var retreivegtfsstations = function(gtfsdep,gtfsarr) {
             }
             //print key values
             else{
-              alert (result.value.departure  + " " + result.value.arrival)
+              alert (result.value.id  + " " + result.value.caption)
               // for(var field in result.value) {
               //   // console.log(field+"="+result.value[field]);
               //
@@ -124,14 +125,14 @@ var retreivegtfsstations = function(gtfsdep,gtfsarr) {
 
 
 
-    var getAllgtfsstations = function() {
-        var gtfsstationArr = [];
+    var getAllnewsitems = function() {
+        var newsitemArr = [];
 
         //Creating a transaction object to perform Read/Write operations
-        var trans = db.transaction(["gtfsstation"], "readwrite");
+        var trans = db.transaction(["NewsItems"], "readwrite");
 
         //Getting a reference of the todo store
-        var store = trans.objectStore("gtfsstation");
+        var store = trans.objectStore("NewsItems");
 
         //Wrapping all the logic inside a promise
         var promise = new Promise(function(resolve, reject){
@@ -149,7 +150,7 @@ var retreivegtfsstations = function(gtfsdep,gtfsarr) {
                 }
                 //Pushing result into the todo list
                 else{
-                    gtfsstationArr.push(result.value);
+                    newsitemArr.push(result.value);
                     if(result.value.id > lastIndex){
                         lastIndex=result.value.id;
                     }
@@ -165,11 +166,11 @@ var retreivegtfsstations = function(gtfsdep,gtfsarr) {
         return promise;
     };
 
-    var deletegtfsstation = function(id) {
+    var deletenewsitem = function(id) {
 
         var promise = new Promise(function(resolve, reject){
-            var trans = db.transaction(["gtfsstation"], "readwrite");
-            var store = trans.objectStore("gtfsstation");
+            var trans = db.transaction(["NewsItems"], "readwrite");
+            var store = trans.objectStore("NewsItems");
             var request = store.delete(id);
 
             request.onsuccess = function(e) {
@@ -186,10 +187,10 @@ var retreivegtfsstations = function(gtfsdep,gtfsarr) {
 
     return{
         open: open,
-        addgtfsstations: addgtfsstations,
-        retreivegtfsstations:retreivegtfsstations,
-        getAllgtfsstations: getAllgtfsstations,
-        deletegtfsstation: deletegtfsstation
+        addnewsitem: addnewsitem,
+        retreivenewsitem:retreivenewsitem,
+        getAllnewsitems: getAllnewsitems,
+        deletenewsitem: deletenewsitem
     };
 
 }();

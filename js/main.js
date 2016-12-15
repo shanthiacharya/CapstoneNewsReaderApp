@@ -1,9 +1,44 @@
 'use strict';
 
-// TODO
+
+var reg;
+var sub;
+var isSubscribed = false;
+var subscribeButton = document.querySelector('#subscribeBtn');
+var closeButton = document.querySelector('#closeBtn');
+
 $(document).ready(function(){
+
+
   console.log("Document Ready");
   var newsArr =  new Array();
+
+
+/* Database Stuff */
+
+if("indexedDB" in window) {
+        console.log("Indexed DB is supported");
+        indexedDBHelper.open().then(function(db) {
+        console.log("Success!", db);
+
+        }, function(error) {
+          console.error("Failed!", error);
+        });
+
+    }
+
+// function fetchNews(saveToDatabase) {
+//     getNewsJSONArray().then(function(response) {
+//         console.log("Success!", response);
+//         newsArr = JSON.parse(response);
+//         console.log("Success!", newsArr);
+//         displayNewsList(newsArr);
+//     }, function(error) {
+//       console.error("Failed!", error);
+//     });
+// }
+
+
 
   if ($("body").data("title") === "newsList") {
     getNewsJSONArray().then(function(response) {
@@ -26,13 +61,15 @@ else
           console.log("Success!", newsArr);
           var filterednewsArr = newsArr.filter (function (value) {
                  if(value.id == newsid) {
+                     console.log("value same", newsid,value.id);
                      return true
                  } else
                  {
+                       console.log("value not same", newsid, value.id);
                        return false;
                  }
                });
-
+          console.log("Success!", filterednewsArr[0].paragraphs);
           displayNewsDetail(filterednewsArr);
       }, function(error) {
         console.error("Failed!", error);
@@ -163,6 +200,25 @@ Handlebars.registerHelper('json', function(context) {
 });
 
 
+Handlebars.registerHelper('eachToDisplayProperty', function(context) {
+    var ret = "";
+    var parsed = JSON.parse(context);
+    var arr = [];
+
+    for(var x in parsed){
+      arr.push(parsed[x]);
+    }
+    console.log ("context :" + arr);
+    // var subArray =context[0];
+    // console.log ("context :" + context[0]);
+    // for(var i = 0; i < subArray.length; i++) {
+    //   console.log ("Sub Value :" + subArray[i]);
+    //       ret = subArray[i];
+    // }
+    return ret;
+});
+
+
 function getselectedNewsItem() {
   var newsitemid = window.location.hash.substring(1);
   return newsitemid;
@@ -171,10 +227,6 @@ function getselectedNewsItem() {
 
 
 
-var reg;
-var sub;
-var isSubscribed = false;
-var subscribeButton = document.querySelector('#subscribeBtn');
 
 
 if ('serviceWorker' in navigator) {
@@ -223,4 +275,11 @@ function unsubscribe() {
     // subscribeButton.textContent = 'Subscribe';
       subscribeButton.innerHTML = 'Subscribe';
   });
+}
+if (closeButton) {
+    closeButton.addEventListener('click', function() {
+    console.log('close clicked');
+    window.location.href = "index.html";
+
+});
 }

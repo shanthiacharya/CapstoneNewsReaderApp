@@ -44,7 +44,7 @@
         <!-- <span class="mdl-layout-title">Today</span> -->
         <!-- <a href="index.html" aria-label="Back to News list" >  <h1>Back</h1></a> -->
         <!-- Icon button -->
-        <button class="mdl-button mdl-js-button mdl-button--icon">
+        <button class="mdl-button mdl-js-button mdl-button--icon close" id="closeBtn">
           <i class="material-icons">close</i>
         </button>
 
@@ -70,20 +70,23 @@
 
         <!-- Starts here -->
         {{#each .}}
-        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing" tabindex="0"  >
-             <div class="photoContainer">
-              <!-- href={{url}} data-id ={{id}} -->
-              <a data-id ={{id}} data-control="resListItem" onclick="redirecttoDetailsPage({{{json this}}})">
-                <img  src={{photo}} width="100" height="100" alt ={{name}} ></img> </a>
-             </div>
-            <div id= "resinfo" class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+        <div class="mdl-card__supporting-text-2 mdl-grid mdl-grid--no-spacing" tabindex="0"  >
+             <div class="largerphoto">
                <h5>  {{caption}}</h5>
-               <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                 {{description}}
-               </div>
 
-          </div>
-        {{/each}}
+                <img  src={{photo}}  alt ={{name}}  ></img> 
+             </div>
+
+             <!-- {{paragraphs}} -->
+
+           <p>  {{paragraph1}}</p>
+           <p>  {{paragraph2}}</p>
+           <p>  {{paragraph3}}</p>
+           <p>  {{paragraph4}}</p>
+           <p>  {{paragraph5}}</p>
+
+
+          {{/each}}
         <!-- Ends here -->
 
     </div>
@@ -106,6 +109,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
 <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/idb.js"></script>
 
   </body>
 </html>

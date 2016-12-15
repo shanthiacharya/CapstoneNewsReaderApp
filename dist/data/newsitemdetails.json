@@ -1,18 +1,102 @@
 [
 
-  {"id":1,
-  "caption":"Microsoft joins the Linux Foundation, 15 years after Ballmer called it 'cancer'",
-  "description":"Former Microsoft CEO might have labeled Linux a cancer 15 years ago, but things couldn't be any different this week. Microsoft, the software giant that has built its empire on closed-source proprietary software, is joining the Linux Foundation. 10 years ago that would have seemed unimaginable, but Microsoft has been steadily embracing open source recently, leading it to become the top organizat",
-  "photo": "./images/thumbnail1.png"
+	{
+		"id": 1,
+		"caption": "Microsoft joins the Linux Foundation, 15 years after Ballmer called it 'cancer'",
+		"description": "Former Microsoft CEO might have labeled Linux a cancer 15 years ago, but things couldn't be any different this week. Microsoft, the software giant that has built its empire on closed-source proprietary software, is joining the Linux Foundation. 10 years ago that would have seemed unimaginable, but Microsoft has been steadily embracing open source recently, leading it to become the top organizat",
+		"photo": "./images/thumbnail1.png",
+			"paragraph1": "Microsoft secured regulatory approval for its $26 billion acquisition of LinkedIn earlier this week, and the software giant is finalizing the deal today. In a LinkedIn note, of course, Microsoft CEO Satya Nadella says he’s “enthusiastic about the common mission” of both Microsoft and LinkedIn. “As our two companies’ leadership teams have spent time together these last few months, I’ve gained a deeper understanding of and appreciation for LinkedIn’s relentless focus on its members.",
+			"paragraph2": "Microsoft has a set of goals for its LinkedIn integration plan, including some specific areas where the company will leverage the social network. Nadella reveals a list of what’s planned\nEnabling members drafting résumés in Word to update their profiles, and discover and apply to jobs on LinkedIn",
+			"paragraph3": "LinkedIn identity and network in Microsoft Outlook and the Office suite\n LinkedIn notifications within the Windows action center\n",
+			"paragraph4": "Most of the initial integrations are what you’d expect, but Windows 10 users will be surprised to see the addition of LinkedIn notifications in the Windows notification center. LinkedIn is well known for its bombarding emails and notifications, and Microsoft will have to manage these very carefully if it plans to highlight them directly within Windows 10.",
+			"paragraph5": "As we articulated six months ago, our top priority is to accelerate LinkedIn’s growth, by adding value for every LinkedIn member,” says Nadella. “I am energized and optimistic for what we can achieve together and the journey ahead."
+		
 
 
-  },
-  {"id":2,
-    "caption":"OnePlus' Bullets earphones are criminally underpriced'",
-    "description":"FOnePlus is our reigning champion when it comes to the best value smartphones , so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
-    "photo": "./images/thumbnail2.png"
+	}, {
+		"id": 2,
+		"caption": "Donald Trump angrily tweeted about the SNL sketch about him tweeting",
+		"description": "When Donald Trump won the 2016 Presidential Election, it quickly became clear that Alec Baldwin would have steady work on Saturday Night Live for his portrayal of the President-elect. The show lampooned Trump on last night’s show, drawing a quick response from him on his favorite medium, Twitter. Last ",
+		"photo": "./images/thumbnail2.png",
+		"paragraph1": "Microsoft secured regulatory approval for its $26 billion acquisition of LinkedIn earlier this week, and the software giant is finalizing the deal today. In a LinkedIn note, of course, Microsoft CEO Satya Nadella says he’s “enthusiastic about the common mission” of both Microsoft and LinkedIn. “As our two companies’ leadership teams have spent time together these last few months, I’ve gained a deeper understanding of and appreciation for LinkedIn’s relentless focus on its members.",
+		"paragraph2": "Microsoft has a set of goals for its LinkedIn integration plan, including some specific areas where the company will leverage the social network. Nadella reveals a list of what’s planned\nEnabling members drafting résumés in Word to update their profiles, and discover and apply to jobs on LinkedIn",
+		"paragraph3": "LinkedIn identity and network in Microsoft Outlook and the Office suite\n LinkedIn notifications within the Windows action center\n",
+		"paragraph4": "Most of the initial integrations are what you’d expect, but Windows 10 users will be surprised to see the addition of LinkedIn notifications in the Windows notification center. LinkedIn is well known for its bombarding emails and notifications, and Microsoft will have to manage these very carefully if it plans to highlight them directly within Windows 10.",
+		"paragraph5": "As we articulated six months ago, our top priority is to accelerate LinkedIn’s growth, by adding value for every LinkedIn member,” says Nadella. “I am energized and optimistic for what we can achieve together and the journey ahead."
 
-  }
+	}, {
+		"id": 3,
+		"caption": "OnePlus' Bullets earphones are criminally underpriced'",
+		"description": "FOnePlus is our reigning champion when it comes to the best value smartphones , so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+		"photo": "./images/thumbnail2.png",
+		"paragraph1": "Microsoft secured regulatory approval for its $26 billion acquisition of LinkedIn earlier this week, and the software giant is finalizing the deal today. In a LinkedIn note, of course, Microsoft CEO Satya Nadella says he’s “enthusiastic about the common mission” of both Microsoft and LinkedIn. “As our two companies’ leadership teams have spent time together these last few months, I’ve gained a deeper understanding of and appreciation for LinkedIn’s relentless focus on its members.",
+		"paragraph2": "Microsoft has a set of goals for its LinkedIn integration plan, including some specific areas where the company will leverage the social network. Nadella reveals a list of what’s planned\nEnabling members drafting résumés in Word to update their profiles, and discover and apply to jobs on LinkedIn",
+		"paragraph3": "LinkedIn identity and network in Microsoft Outlook and the Office suite\n LinkedIn notifications within the Windows action center\n",
+		"paragraph4": "Most of the initial integrations are what you’d expect, but Windows 10 users will be surprised to see the addition of LinkedIn notifications in the Windows notification center. LinkedIn is well known for its bombarding emails and notifications, and Microsoft will have to manage these very carefully if it plans to highlight them directly within Windows 10.",
+		"paragraph5": "As we articulated six months ago, our top priority is to accelerate LinkedIn’s growth, by adding value for every LinkedIn member,” says Nadella. “I am energized and optimistic for what we can achieve together and the journey ahead."
+
+
+	}, {
+		"id": 4,
+		"caption": "Microsoft finalizes $26 billion LinkedIn acquisition, reveals what’s next",
+		"description": "Microsoft secured regulatory approval for its $26 billion acquisition of LinkedIn earlier this week, and the software giant is finalizing the deal today. In a LinkedIn note , of course, Microsoft CEO Satya Nadella says he’s “enthusiastic  ",
+		"photo": "./images/linkedinmicrosoft.0.0.jpeg",
+		"paragraph1": "Microsoft secured regulatory approval for its $26 billion acquisition of LinkedIn earlier this week, and the software giant is finalizing the deal today. In a LinkedIn note, of course, Microsoft CEO Satya Nadella says he’s “enthusiastic about the common mission” of both Microsoft and LinkedIn. “As our two companies’ leadership teams have spent time together these last few months, I’ve gained a deeper understanding of and appreciation for LinkedIn’s relentless focus on its members.",
+		"paragraph2": "Microsoft has a set of goals for its LinkedIn integration plan, including some specific areas where the company will leverage the social network. Nadella reveals a list of what’s planned\nEnabling members drafting résumés in Word to update their profiles, and discover and apply to jobs on LinkedIn",
+		"paragraph3": "LinkedIn identity and network in Microsoft Outlook and the Office suite\n LinkedIn notifications within the Windows action center\n",
+		"paragraph4": "Most of the initial integrations are what you’d expect, but Windows 10 users will be surprised to see the addition of LinkedIn notifications in the Windows notification center. LinkedIn is well known for its bombarding emails and notifications, and Microsoft will have to manage these very carefully if it plans to highlight them directly within Windows 10.",
+		"paragraph5": "As we articulated six months ago, our top priority is to accelerate LinkedIn’s growth, by adding value for every LinkedIn member,” says Nadella. “I am energized and optimistic for what we can achieve together and the journey ahead."
+
+	}, {
+		"id": 5,
+		"caption": "OnePlus' Bullets earphones are criminally underpriced'",
+		"description": "FOnePlus is our reigning champion when it comes to the best value smartphones , so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+		"photo": "./images/thumbnail2.png",
+		"paragraph1": "Microsoft secured regulatory approval for its $26 billion acquisition of LinkedIn earlier this week, and the software giant is finalizing the deal today. In a LinkedIn note, of course, Microsoft CEO Satya Nadella says he’s “enthusiastic about the common mission” of both Microsoft and LinkedIn. “As our two companies’ leadership teams have spent time together these last few months, I’ve gained a deeper understanding of and appreciation for LinkedIn’s relentless focus on its members.",
+		"paragraph2": "Microsoft has a set of goals for its LinkedIn integration plan, including some specific areas where the company will leverage the social network. Nadella reveals a list of what’s planned\nEnabling members drafting résumés in Word to update their profiles, and discover and apply to jobs on LinkedIn",
+		"paragraph3": "LinkedIn identity and network in Microsoft Outlook and the Office suite\n LinkedIn notifications within the Windows action center\n",
+		"paragraph4": "Most of the initial integrations are what you’d expect, but Windows 10 users will be surprised to see the addition of LinkedIn notifications in the Windows notification center. LinkedIn is well known for its bombarding emails and notifications, and Microsoft will have to manage these very carefully if it plans to highlight them directly within Windows 10.",
+		"paragraph5": "As we articulated six months ago, our top priority is to accelerate LinkedIn’s growth, by adding value for every LinkedIn member,” says Nadella. “I am energized and optimistic for what we can achieve together and the journey ahead."
+
+	}, {
+		"id": 6,
+		"caption": "OnePlus' Bullets earphones are criminally underpriced'",
+		"description": "FOnePlus is our reigning champion when it comes to the best value smartphones , so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+		"photo": "./images/thumbnail2.png",
+		"paragraph1": "Microsoft secured regulatory approval for its $26 billion acquisition of LinkedIn earlier this week, and the software giant is finalizing the deal today. In a LinkedIn note, of course, Microsoft CEO Satya Nadella says he’s “enthusiastic about the common mission” of both Microsoft and LinkedIn. “As our two companies’ leadership teams have spent time together these last few months, I’ve gained a deeper understanding of and appreciation for LinkedIn’s relentless focus on its members.",
+		"paragraph2": "Microsoft has a set of goals for its LinkedIn integration plan, including some specific areas where the company will leverage the social network. Nadella reveals a list of what’s planned\nEnabling members drafting résumés in Word to update their profiles, and discover and apply to jobs on LinkedIn",
+		"paragraph3": "LinkedIn identity and network in Microsoft Outlook and the Office suite\n LinkedIn notifications within the Windows action center\n",
+		"paragraph4": "Most of the initial integrations are what you’d expect, but Windows 10 users will be surprised to see the addition of LinkedIn notifications in the Windows notification center. LinkedIn is well known for its bombarding emails and notifications, and Microsoft will have to manage these very carefully if it plans to highlight them directly within Windows 10.",
+		"paragraph5": "As we articulated six months ago, our top priority is to accelerate LinkedIn’s growth, by adding value for every LinkedIn member,” says Nadella. “I am energized and optimistic for what we can achieve together and the journey ahead."
+
+	}, {
+		"id": 7,
+		"caption": "OnePlus' Bullets earphones are criminally underpriced'",
+		"description": "FOnePlus is our reigning champion when it comes to the best value smartphones , so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+		"photo": "./images/thumbnail2.png",
+		"paragraph1": "Microsoft secured regulatory approval for its $26 billion acquisition of LinkedIn earlier this week, and the software giant is finalizing the deal today. In a LinkedIn note, of course, Microsoft CEO Satya Nadella says he’s “enthusiastic about the common mission” of both Microsoft and LinkedIn. “As our two companies’ leadership teams have spent time together these last few months, I’ve gained a deeper understanding of and appreciation for LinkedIn’s relentless focus on its members.",
+		"paragraph2": "Microsoft has a set of goals for its LinkedIn integration plan, including some specific areas where the company will leverage the social network. Nadella reveals a list of what’s planned\nEnabling members drafting résumés in Word to update their profiles, and discover and apply to jobs on LinkedIn",
+		"paragraph3": "LinkedIn identity and network in Microsoft Outlook and the Office suite\n LinkedIn notifications within the Windows action center\n",
+		"paragraph4": "Most of the initial integrations are what you’d expect, but Windows 10 users will be surprised to see the addition of LinkedIn notifications in the Windows notification center. LinkedIn is well known for its bombarding emails and notifications, and Microsoft will have to manage these very carefully if it plans to highlight them directly within Windows 10.",
+		"paragraph5": "As we articulated six months ago, our top priority is to accelerate LinkedIn’s growth, by adding value for every LinkedIn member,” says Nadella. “I am energized and optimistic for what we can achieve together and the journey ahead."
+
+
+	}, {
+		"id": 8,
+		"caption": "OnePlus' Bullets earphones are criminally underpriced'",
+		"description": "FOnePlus is our reigning champion when it comes to the best value smartphones , so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+		"photo": "./images/thumbnail2.png",
+		"paragraph1": "Microsoft secured regulatory approval for its $26 billion acquisition of LinkedIn earlier this week, and the software giant is finalizing the deal today. In a LinkedIn note, of course, Microsoft CEO Satya Nadella says he’s “enthusiastic about the common mission” of both Microsoft and LinkedIn. “As our two companies’ leadership teams have spent time together these last few months, I’ve gained a deeper understanding of and appreciation for LinkedIn’s relentless focus on its members.",
+		"paragraph2": "Microsoft has a set of goals for its LinkedIn integration plan, including some specific areas where the company will leverage the social network. Nadella reveals a list of what’s planned\nEnabling members drafting résumés in Word to update their profiles, and discover and apply to jobs on LinkedIn",
+		"paragraph3": "LinkedIn identity and network in Microsoft Outlook and the Office suite\n LinkedIn notifications within the Windows action center\n",
+		"paragraph4": "Most of the initial integrations are what you’d expect, but Windows 10 users will be surprised to see the addition of LinkedIn notifications in the Windows notification center. LinkedIn is well known for its bombarding emails and notifications, and Microsoft will have to manage these very carefully if it plans to highlight them directly within Windows 10.",
+		"paragraph5": "As we articulated six months ago, our top priority is to accelerate LinkedIn’s growth, by adding value for every LinkedIn member,” says Nadella. “I am energized and optimistic for what we can achieve together and the journey ahead."
+
+
+	}
+
+
+
 
 
 ]

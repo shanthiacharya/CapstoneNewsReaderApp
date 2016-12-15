@@ -8,11 +8,50 @@
 
   },
   {"id":2,
+    "caption":"Donald Trump angrily tweeted about the SNL sketch about him tweeting",
+    "description":"When Donald Trump won the 2016 Presidential Election, it quickly became clear that Alec Baldwin would have steady work on Saturday Night Live for his portrayal of the President-elect. The show lampooned Trump on last night’s show, drawing a quick response from him on his favorite medium, Twitter. Last ",
+    "photo": "./images/thumbnail2.png"
+
+  },
+  {"id":3,
     "caption":"OnePlus' Bullets earphones are criminally underpriced'",
-    "description":"FOnePlus is our reigning champion when it comes to the best value smartphones , so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+    "description":"FOnePlus is our reigning champion when it comes to the best value smartphones so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+    "photo": "./images/thumbnail2.png"
+
+  },
+  {"id":4,
+    "caption":"Microsoft finalizes $26 billion LinkedIn acquisition, reveals what’s next",
+    "description":"Microsoft secured regulatory approval for its $26 billion acquisition of LinkedIn earlier this week, and the software giant is finalizing the deal today. In a LinkedIn note , of course, Microsoft CEO Satya Nadella says he’s “enthusiastic  ",
+    "photo": "./images/linkedinmicrosoft.0.0.jpeg"
+
+  },
+  {"id":5,
+    "caption":"OnePlus' Bullets earphones are criminally underpriced'",
+    "description":"FOnePlus is our reigning champion when it comes to the best value smartphones so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+    "photo": "./images/thumbnail2.png"
+
+  },
+  {"id":6,
+    "caption":"OnePlus' Bullets earphones are criminally underpriced'",
+    "description":"FOnePlus is our reigning champion when it comes to the best value smartphones so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+    "photo": "./images/thumbnail2.png"
+
+  },
+  {"id":7,
+    "caption":"OnePlus' Bullets earphones are criminally underpriced'",
+    "description":"FOnePlus is our reigning champion when it comes to the best value smartphones so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
+    "photo": "./images/thumbnail2.png"
+
+  },
+  {"id":8,
+    "caption":"OnePlus' Bullets earphones are criminally underpriced'",
+    "description":"FOnePlus is our reigning champion when it comes to the best value smartphones so why shouldn't the company also own the title for best value headphones, too? I've just gotten ahold of its Bullets v2 earphones, and they're a very pleasant listen that's frankly amazing for the asking price of $19.99. Xiaomi's ",
     "photo": "./images/thumbnail2.png"
 
   }
+
+
+
 
 
 ]

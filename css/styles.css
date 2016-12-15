@@ -35,6 +35,24 @@ html, body {
 .mdl-layout__drawer .avatar {
   margin-bottom: 16px;
 }
+.mdl-card__supporting-text-2 {
+    color: #595959;
+    font-size: 1rem;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 16px;
+    width: 90%;
+}
+.mdl-layout__drawer .mdl-navigation .mdl-2-navigation__link {
+   display: block;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 16px 40px;
+    margin: 0;
+    text-decoration: none;
+  color: rgba(219, 220, 220,1);
+}
 .demo-drawer {
   border: none;
 }
@@ -87,6 +105,8 @@ html, body {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+
+
 .demo-layout .demo-navigation .mdl-navigation__link {
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
@@ -97,7 +117,9 @@ html, body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  color: rgba(255, 255, 255, 0.56);
+color: rgba(219, 220, 220,1);
+
+
   font-weight: 500;
 }
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
@@ -245,4 +267,14 @@ _:-ms-input-placeholder, :root .demo-graph {
 
 .page-content{
   padding:20px;
+}
+
+.largerphoto {
+max-width: 647px;
+width: 645px;
+margin-top: 3rem;
+margin-bottom: 3rem;
+display: block;
+border-radius: 3px;
+border: 1px solid rgb(239, 239, 239);
 }
